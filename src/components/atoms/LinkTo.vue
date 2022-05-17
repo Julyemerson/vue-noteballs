@@ -1,5 +1,5 @@
 <template>
-    <RouterLink class="block w-full py-3 transition hover:text-cyan-600" :to="{ name: linkTo }">
+    <RouterLink class="block w-full py-3 hover:text-cyan-600" :to="{ name: linkTo }">
         {{ name }}
     </RouterLink>
 </template>
