@@ -1,24 +1,19 @@
 <template>
-    <div class="w-full p-4">
-        <h2 class="text-3xl text-indigo-600 font-extrabold my-2 text-center">{{ title }}</h2>
-        <p class="font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi quae
-            dolore
-            numquam voluptas velit.
-            Facere, quo? Minima itaque velit dolorem ex aut rem harum voluptatibus tempore ullam, ab nobis?
-        </p>
-        <hr class="mt-8 border-t-2 border-indigo-600 w-20 mx-auto" />
+    <div class="mt-8 mx-auto prose">
+        {{ note }}
+        <hr class="mt-8 border-t-2 border-indigo-600 w-40 mx-auto" />
     </div>
 </template>
 
 <script setup>
 const props = defineProps({
+    note: {
+        type: String,
+        required: true,
+    },
     title: {
         type: String,
-        default: 'One more ideia'
-    },
-
+        default: 'Default Title'
+    }
 })
 </script>
-
-<style scoped>
-</style>
